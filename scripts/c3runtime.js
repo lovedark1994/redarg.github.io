@@ -4246,16 +4246,13 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Behaviors.Platform.Cnds.IsOnFloor,
+		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Touch.Cnds.OnTouchEnd,
-		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Behaviors.Platform.Cnds.IsJumping,
-		C3.Plugins.Audio.Acts.Stop,
-		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Behaviors.Platform.Acts.SetVectorY,
 		C3.Behaviors.Platform.Exps.VectorY,
-		C3.Behaviors.Platform.Cnds.OnLand,
-		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
+		C3.Plugins.Audio.Acts.Stop,
 		C3.Plugins.Sprite.Acts.StopAnim,
 		C3.Plugins.Sprite.Acts.SetX,
 		C3.Plugins.System.Exps.scrollx,
@@ -4267,6 +4264,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.StartAnim,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
+		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.AJAX.Acts.RequestFile,
 		C3.Plugins.Text.Acts.SetFontFace,
 		C3.Plugins.LocalStorage.Acts.GetItem,
@@ -4287,6 +4285,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.Text.Acts.SetFontSize,
 		C3.Plugins.Text.Acts.SetVAlign,
+		C3.Plugins.Text.Acts.SetHAlign,
 		C3.Plugins.LocalStorage.Cnds.OnAllSetsComplete,
 		C3.Plugins.Browser.Exps.QueryParam,
 		C3.Plugins.Browser.Acts.GoToURL
@@ -4559,14 +4558,9 @@ self.C3_ExpressionFuncs = [
 		() => "SUCCESS2",
 		() => "FAIL",
 		() => "長",
-		() => 10,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpBehavior() * 0.8);
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpBehavior();
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -4582,6 +4576,7 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (f0() + 5);
 		},
+		() => 80,
 		() => "字庫",
 		() => "Arial",
 		() => "data",
