@@ -4266,17 +4266,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Acts.SetLayerEffectParam,
-		C3.Plugins.Sprite.Cnds.CompareWidth,
-		C3.Behaviors.Tween.Acts.StopTweens,
-		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Browser.Acts.GoToURLWindow,
-		C3.Plugins.Spritefont2.Acts.SetDefaultColor,
-		C3.Plugins.Text.Acts.SetInstanceVar,
-		C3.Plugins.Text.Acts.SetVisible,
-		C3.Plugins.System.Cnds.Every,
-		C3.Plugins.Text.Cnds.CompareInstanceVar,
-		C3.Plugins.Text.Acts.SubInstanceVar,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Plugins.Spritefont2.Acts.SetDefaultColor,
 		C3.Plugins.System.Cnds.For,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.System.Exps.mid,
@@ -4287,6 +4278,15 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AdvancedRandom.Acts.RemoveProbabilityEntry,
 		C3.Plugins.System.Exps.int,
 		C3.Plugins.Sprite.Cnds.IsVisible,
+		C3.Plugins.Browser.Acts.GoToURLWindow,
+		C3.Plugins.Sprite.Cnds.CompareWidth,
+		C3.Behaviors.Tween.Acts.StopTweens,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Text.Acts.SetInstanceVar,
+		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.Text.Cnds.CompareInstanceVar,
+		C3.Plugins.Text.Acts.SubInstanceVar,
 		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Behaviors.Platform.Cnds.IsOnFloor,
@@ -4561,14 +4561,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpBehavior("閃");
 		},
-		() => "SUCCESS1",
-		() => "https://lihi2.cc/gvuZR",
-		() => "NewWindow",
-		() => " https://lihi2.cc/XpntO",
-		() => "SUCCESS2",
 		() => -281474976711679,
-		() => "FAIL",
-		() => 10,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpInstVar()).toString();
@@ -4623,6 +4616,13 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpInstVar();
 		},
 		() => " https://lihi2.cc/W8Kns",
+		() => "NewWindow",
+		() => "SUCCESS1",
+		() => "https://lihi2.cc/gvuZR",
+		() => " https://lihi2.cc/XpntO",
+		() => "SUCCESS2",
+		() => "FAIL",
+		() => 10,
 		() => "長",
 		p => {
 			const n0 = p._GetNode(0);
