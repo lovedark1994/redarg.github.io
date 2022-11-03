@@ -4287,6 +4287,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.Text.Cnds.CompareInstanceVar,
 		C3.Plugins.Text.Acts.SubInstanceVar,
+		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Behaviors.Platform.Cnds.IsOnFloor,
@@ -4617,12 +4618,13 @@ self.C3_ExpressionFuncs = [
 		},
 		() => " https://lihi2.cc/W8Kns",
 		() => "NewWindow",
-		() => "SUCCESS1",
+		() => "NEXT STAGE",
 		() => "https://lihi2.cc/gvuZR",
 		() => " https://lihi2.cc/XpntO",
-		() => "SUCCESS2",
+		() => "SUCCESS",
 		() => "FAIL",
 		() => 10,
+		() => -281492156580863,
 		() => "長",
 		p => {
 			const n0 = p._GetNode(0);
