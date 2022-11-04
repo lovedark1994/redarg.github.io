@@ -4281,6 +4281,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.GoToURLWindow,
 		C3.Behaviors.Tween.Acts.StopTweens,
 		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Browser.Acts.GoToURL,
 		C3.Plugins.Sprite.Cnds.CompareWidth,
 		C3.Plugins.Text.Acts.SetInstanceVar,
 		C3.Plugins.Text.Acts.SetVisible,
@@ -4288,6 +4289,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Cnds.CompareInstanceVar,
 		C3.Plugins.Text.Acts.SubInstanceVar,
 		C3.Plugins.Sprite.Acts.SetDefaultColor,
+		C3.Plugins.Audio.Cnds.IsSilent,
 		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Behaviors.Platform.Cnds.IsOnFloor,
@@ -4307,8 +4309,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.ScrollX,
 		C3.Plugins.Sprite.Acts.StartAnim,
 		C3.Plugins.Sprite.Exps.Y,
-		C3.Plugins.Sprite.Acts.SetPosToObject,
 		C3.Plugins.Sprite.Acts.SetOpacity,
+		C3.Plugins.Sprite.Acts.SetPosToObject,
 		C3.Plugins.AJAX.Acts.RequestFile,
 		C3.Plugins.Text.Acts.SetFontFace,
 		C3.Plugins.LocalStorage.Acts.GetItem,
@@ -4328,8 +4330,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Cnds.OnTypewriterTextFinished,
 		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.LocalStorage.Cnds.OnAllSetsComplete,
-		C3.Plugins.Browser.Exps.QueryParam,
-		C3.Plugins.Browser.Acts.GoToURL
+		C3.Plugins.Browser.Exps.QueryParam
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4373,6 +4374,8 @@ self.C3_JsPropNameTable = [
 	{廣告: 0},
 	{秒: 0},
 	{署名: 0},
+	{Sprite2: 0},
+	{Sprite3: 0},
 	{誰: 0},
 	{答案: 0},
 	{正確數: 0},
@@ -4587,7 +4590,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
-			return () => (and((n0.ExpObject() + " CORRAT="), v1.GetValue()) + "\n");
+			return () => (and((n0.ExpObject() + " CORRECT="), v1.GetValue()) + "\n");
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -4638,13 +4641,13 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("判定");
 		},
-		() => 4636,
+		() => 5278,
 		() => 1.5,
+		() => 80,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (f0() + 5);
 		},
-		() => 80,
 		() => "字庫",
 		() => "Arial",
 		() => "data",
@@ -4686,7 +4689,7 @@ self.C3_ExpressionFuncs = [
 		() => "本測驗由溫芯茜(死狼鬼)製作",
 		() => "783",
 		() => " https://lihi2.cc/CKgfP",
-		() => "太好了，終於找到跟我一樣的人了，請敲敲房門吧",
+		() => "終於找到跟我一樣的人了，敲敲房門吧",
 		() => "你得到的稱號是",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
